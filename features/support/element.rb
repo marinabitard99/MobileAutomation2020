@@ -82,7 +82,7 @@ class Elements
         message: "Element not found! @type: #{@type}, @value: #{@value}, timeout: #{timeout}"
     }
     $driver.wait(wait_opts) {
-      $driver.find_ element(@type, @value).send_keys(text)
+      $driver.find_element(@type, @value).send_keys(text)
       $driver.hide_keyboard
     }
   end
