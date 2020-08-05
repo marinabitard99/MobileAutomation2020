@@ -16,6 +16,15 @@ class RegistrationScreen
     @register_tab_button.click
   end
 
+  def get_register_button_text
+    @register_button.text
+  end
+
+  def verify_first_name(actual)
+    actual = @register_button.text
+    expected = "janis"
+    raise "User name is not the same: Expected #{expected} , Actual: #{actual}" unless actual == expected
+  end
   def click_cancel_offer_button
     @cancel_offer_button.click
   end

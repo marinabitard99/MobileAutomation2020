@@ -7,4 +7,4 @@ Feature: Registration
     #And I click on the eye icons to reveal the passwords
     And I submit the registration details
     And I decline the exclusive offers
-    #Then the correct welcome message is displayed with my name
+    Then the correct welcome message is displayed with my name
